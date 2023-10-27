@@ -1,4 +1,4 @@
-let sentence = "hello there";
+let sentence = "hello";
 let wordsArray = sentence.split(" ");
 console.log(wordsArray);
 
@@ -8,13 +8,14 @@ console.log(reversedArray);
 const reverseString = function(wordsArray) {
   let result = "";
   for (let i = 0; i < wordsArray.length; i++) {
-    result = wordsArray[i] + " " + result;
+    result = result + wordsArray[i] + " ";
   }
-  return result.slice(0, -1); // Remove the trailing space at the end
+  return result.trim(); // Use trim to remove the trailing space at the end
 };
 
 let reversedString = reverseString(reversedArray);
 console.log(reversedString); // Output: "there hello"
+
 
 // Do not edit below this line
 module.exports = reverseString;
