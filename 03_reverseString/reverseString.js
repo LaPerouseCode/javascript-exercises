@@ -10,12 +10,11 @@ const reverseString = function(wordsArray) {
   for (let i = 0; i < wordsArray.length; i++) {
     result = wordsArray[i] + " " + result;
   }
-  return result;
+  return result.slice(0, -1); // Remove the trailing space at the end
 };
 
-
-let reversedString = reverseString(wordsArray).slice(0, -1);
-console.log(reversedString); 
+let reversedString = reverseString(reversedArray);
+console.log(reversedString); // Output: "there hello"
 
 // Do not edit below this line
 module.exports = reverseString;
