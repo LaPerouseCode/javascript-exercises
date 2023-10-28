@@ -1,8 +1,9 @@
 function sumAll(fromNumber, toNumber) {
-    let i = fromNumber;
+    let i = Math.min(fromNumber, toNumber);
+    let end = Math.max(fromNumber, toNumber);
     let addition = 0;
 
-    while (i <= toNumber) {
+    while (i <= end) {
         addition += i;
         console.log(addition);
         i++;
