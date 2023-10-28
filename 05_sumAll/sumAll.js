@@ -1,4 +1,10 @@
 function sumAll(fromNumber, toNumber) {
+   if (fromNumber < 0 || toNumber < 0) {
+    console.log('ERROR')
+    return
+   }
+   
+   
     let i = Math.min(fromNumber, toNumber);
     let end = Math.max(fromNumber, toNumber);
     let addition = 0;
