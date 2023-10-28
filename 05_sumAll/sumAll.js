@@ -1,7 +1,7 @@
 function sumAll(fromNumber, toNumber) {
     if (fromNumber < 0 || toNumber < 0) {
         console.log('ERROR');
-        return;
+        return 'ERROR';
     }
 
     let i = Math.min(fromNumber, toNumber);
@@ -17,11 +17,7 @@ function sumAll(fromNumber, toNumber) {
     return addition;
 }
 
-let result = sumAll(1, 4);
-
-if (result !== undefined) {
-    console.log("Final Result = " + result);
-}
-
+let result = sumAll(1, -4); // Example with a negative number
+console.log("Final Result = " + result);
 // Do not edit below this line
 module.exports = sumAll;
