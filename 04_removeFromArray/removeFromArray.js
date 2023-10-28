@@ -7,7 +7,7 @@ let itemOut5
 let itemOut6
 let itemOut7
 let itemOut8
-const removeFromArray = function(myArray, itemOut, itemOut2) {
+const removeFromArray = function(myArray, itemOut, itemOut2, itemOut3, itemOut4, itemOut5) {
     if (Array.isArray(itemOut)) {
         return myArray.filter(item => !itemOut.includes(item));
     } else {
