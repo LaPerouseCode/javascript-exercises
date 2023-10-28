@@ -1,10 +1,9 @@
 function sumAll(fromNumber, toNumber) {
-   if (fromNumber < 0 || toNumber < 0) {
-    console.log('ERROR')
-    return
-   }
-   
-   
+    if (fromNumber < 0 || toNumber < 0) {
+        console.log('ERROR');
+        return;
+    }
+
     let i = Math.min(fromNumber, toNumber);
     let end = Math.max(fromNumber, toNumber);
     let addition = 0;
@@ -19,7 +18,10 @@ function sumAll(fromNumber, toNumber) {
 }
 
 let result = sumAll(1, 4);
-console.log("Final Result = " + result);
+
+if (result !== undefined) {
+    console.log("Final Result = " + result);
+}
 
 // Do not edit below this line
 module.exports = sumAll;
