@@ -1,11 +1,11 @@
 let addition = 0;
 const add = function(a, b) {
-  addition += a + b;
+  return a + b;
 };
 
 let sub = 0;
 const subtract = function(a, b) {
-  sub += a - b;
+  return a - b;
 };
 
 let sumMyArray = [1, 4, 7]
