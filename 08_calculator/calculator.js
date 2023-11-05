@@ -23,9 +23,10 @@ const multiply = function() {
   }
 };
 
-const power(base, exponent) {
+const power = function(base, exponent) {
   return Math.pow(base, exponent);
-}
+};
+
 
 let totalFact = 1;
 const factorial = function(n) {
